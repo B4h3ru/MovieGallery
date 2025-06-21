@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outter-style{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-image: url("../images/images.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    /* border: 1px solid red; */
+    color: white;
+} 
+.movie-name{
+        text-align: center;
+        color: chocolate;
+        padding: 1px;
+    }
+.signup-style{
+        position: absolute;
+        /* display: block; */
+        margin: 5px;
+        height: 600px;
+        width: 600px;
+        margin-left: 30vw;
+        border: 2px solid rgb(52, 250, 13);
+        border-radius: 40px;
+    }
+.signup-form{
+            position: absolute;
+            display: block;
+            height: 500px;
+            width: 500px;
+            margin-top: 20px;
+            margin-left: 3vw;
+            /* border: 2px solid red; */
+            font-size: 20px;
+            label{
+                display: block;
+                /* padding: 5px; */
+                margin: 15px 0 5px 5px;
+               
+            }
+            
+            input{
+                display: block;
+                padding: 5px;
+                width: 400px;
+                font-size: 20px;
+                margin: 15px 0 5px 5px;
+                border: 2px solid green;
+                border-radius: 10px;
+
+            }
+            button{
+                font-size: 30px;
+                width: 300px;
+                margin: 20px 0 0 60px;
+                border: 2px solid green;
+                border-radius: 30px;
+                padding: 5px;
+                color: green;
+            }
+            button:hover{
+                background-color: rgb(56, 47, 47);
+            }
+            p{
+                margin-top: 5px;
+                a{
+                    color: yellow;
+                    text-decoration: none;
+
+                }
+                a:hover{
+                    color: red;
+                    text-decoration: underline;
+                }
+                a:active{
+                    color: yellow;
+                }
+            }
+
+        }

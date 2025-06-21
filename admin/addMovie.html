@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload-Movies</title>
+    <style>
+        *{
+            margin: o;
+            padding: 0;
+            color: white;
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color: green;
+        }
+        .add-movies{
+            position: absolute;
+            width: 700px;
+            height: 620px;
+            border: 2px solid green;
+            border-radius: 30px;
+            margin-left: 30vw;
+            margin-top: -15px;
+        }
+        
+        form{
+            margin-left: 20px;
+            margin-top: 5px;
+            width: 500px;
+            height: 400px;
+
+        }
+        label{
+            margin-left: 50px;
+            font-size: 20px;
+
+        }
+        input{
+            display: block;
+            margin-left: 50px;
+            font-size: 20px;
+            width: 400px;
+            border: 1px solid rgb(170, 167, 167);
+            border-radius: 5px;
+        }
+        button{
+            margin-left: 150px;
+            margin-top: 15px;
+            font-size: 25px;
+            width: 200px;
+            border: 2px solid red;
+            border-radius: 30px;
+            background-color: green;
+        }
+        button:hover{
+            background-color: rgb(186, 186, 31);
+        }
+        select{
+            width: 260px;
+            border: 1px solid rgb(170, 167, 167);
+            border-radius: 5px;
+        }
+        @media screen and (Max-width: 750px){
+            .add-movies{
+                margin-left: 0;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Upload Movies</h1>
+        <div class="add-movies">
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <label for="title"> Movie Titile </label>
+                <input type="text" name="title" placeholder="Enter movie title" required>
+                <br>
+                <!-- <label for="movieid">Movie ID</label>
+                <input type="text" name="movieid" placeholder="Enter movie id" required>
+                <br> -->
+                <label for="length">Lenght of time</label>
+                <input type="text" name="length" placeholder="Enter length of time" required>
+                <br>
+                <label for="noactor">Number of actors</label>
+                <input type="number" name="noactor" placeholder="Enter number of actor" required>
+                <br>
+                <label for="producerfname">Producer first name</label>
+                <input type="text" name="producerfname" placeholder="Enter producer first name" required>
+                <br>
+                <label for="producerlname">Producer last name </label>
+                <input type="text" name="producerlname" placeholder="Enter producer last name" required>
+                <br>
+                <label for="prophoneno">Producer phone number </label>
+                <input type="number" name="prophoneno" placeholder="Enter producer phone number" required>
+                <br>
+                <!-- <label for="producerid">Producer ID </label>
+                <input type="text" name="producerid" placeholder="Enter producer ID" required>
+                <br> -->
+                <label for="category">Movie category :</label>
+                <select name="category" required>
+                    <option value="Action">Action</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Comedy">Comedy</option>
+                </select>
+                <br><br>
+                <label for="video">Select Video to Upload</label>
+                <input type="file" name="video" multiple required>
+                <br>
+                <label for="poster">Select video poster </label>
+                <input type="file" name="poster" multiple required>
+                
+
+                <button type="submit">Upload</button>
+                <span>Back to <a style="color: blue;" href="adminHome.html">HOME</a></span>
+
+
+
+            </form>
+        </div>
+
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="outter-style">
+        <div class="movie-name">
+            <h1>ADD NEW ADMIN  ACCOUNT</h1><br>
+        </div>
+        <div class="signup-style">
+                <form action="signup.php" method="POST" class="signup-form">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" value="" placeholder="Enter first name" required>
+                    <label for="Lastname">Last Name</label>
+                    <input type="text" name="lastname" id="" value="" placeholder="Enter last name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email"  name="email" value="" placeholder="Enter email" required>
+                    <label for="username">User name</label>
+                    <input type="text"  name="username" value="" placeholder="Enter username" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" value="" id="pass" placeholder="Enter password" required>
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" name="confirmpassword" value="" id="cpass" placeholder="Confirm password" required>
+                    <!-- <p style="color: red;font-size:10px;" id="check"></p> -->
+                    <button type="submit">Create</button> 
+                    <span style="margin-top: 21px; font-size: 20px; position: absolute ;">back to <a style="color: rgb(0, 255, 72);" href="Adminhome.html">Home</a></span>
+                    <br>
+                </form>
+        </div>
+
+    </div>
+    <!-- <script>
+        function checkpassword(){
+            let pass = document.getElementById("pass").value;
+            let cpass = document.getElementById("cpass").value;
+
+            if(pass==cpass){
+                let err = document.getElementById("check");
+                err.textContent= "";
+            }else{
+                let err = document.getElementById("check");
+                err.textContent= " Password mismatch !!!!!";
+            }
+        }
+    </script> -->
+    
+</body>
+</html>

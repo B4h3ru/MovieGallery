@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminstrator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("../images/images1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 3000px;
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            font-size: 70px;
+            color: rgb(230, 211, 41);
+        }
+        .outer-style{
+            position: relative;
+            color: white;
+        }
+        .inner-style{
+            position: absolute;
+            margin-left: 30vw;
+            width: 700px;
+            height: 600px;
+        }
+        a{
+            display: block;
+            width: 500px;
+            border: 2px solid rgb(8, 204, 8);
+            border-radius: 20px;
+            color: white;
+            padding: 10px;
+            margin: 45px;
+            font-size: 45px;
+            text-decoration: none;
+            background-color: rgb(43, 86, 86,0.5);
+        }
+        a:hover{
+            background-color: rgb(43, 86, 86,0.8);
+        }
+        img{
+            padding: 10px;
+            margin-right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <h1>This is Admin home page <a href="addMovie.html">add movie</a></h1> -->
+    <div class="outer-style">
+        <h1>Adminstrator </h1>
+        <div class="inner-style">
+            <a href="addMovie.html"> <img src="../images/addmovies.png" width="50px" height="50px" alt="logo"> ADD MOVIES</a>
+            <a href="UpdateMovie.php"><img src="../images/addAdmin.jpg" width="50px" height="50px" alt="logo">UPDATE MOVIES</a>
+            <a href="addAdminaccount.html"> <img src="../images/Admin.jpg" width="50px" height="50px" alt="logo">ADD ADMINS</a>
+            <!-- <a href="#history.html"><img src="../images/addAdmin.jpg" width="50px" height="50px" alt="logo">SYSTEM HISTORY</a> -->
+
+        </div>
+    </div>
+</body>
+</html>
+

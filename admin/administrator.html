@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            overflow: hidden;
+        }
+        h1{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .admin{
+            position: absolute;
+            display: block;
+            
+            width: 500px;
+            height: 500px;
+            color: red;
+            margin-top: 100px;
+            margin-left: 35vw;
+            border: 2px solid green;
+            border-radius: 30px;
+        }
+        form{
+            margin-left: 50px;
+
+        }
+        label{
+            display: block;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        input{
+            display: block;
+            margin-top: 10px;
+            width: 400px;
+            font-size: 30px;
+            border: 2px solid red;
+            border-radius: 10px;
+            color: green;
+            background-color: rgb(233, 222, 222);
+        }
+        button{
+            margin-top: 50px;
+            
+            width: 200px;
+            font-size: 35px;
+            border: 2px solid green;
+            border-radius: 30px;
+            background-color: rgb(153, 156, 159);
+        }
+        button:hover{
+            background-color: green;
+            
+        }
+        @media screen and (max-width : 750px) {
+            .admin{
+                margin-left: 15vw;
+            }
+            
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="admin">
+        <h1>Login</h1>
+        <form action="adminlogin.php" method="POST" >
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter username">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

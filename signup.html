@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="outter-style">
+        <div class="movie-name">
+            <h1>BahirMovies</h1><br>
+            <h3>Sign Up</h3> 
+        </div>
+
+        <div class="signup-style">
+                <form action="signup.php" method="POST" class="signup-form">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" value="" placeholder="Enter first name" required>
+                    <label for="Lastname">Last Name</label>
+                    <input type="text" name="lastname" id="" value="" placeholder="Enter last name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email"  name="email" value="" placeholder="Enter email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" value="" id="pass" placeholder="Enter password" required>
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" name="confirmpassword" value="" id="cpass" placeholder="Confirm passwod" onblur="checkpassword();" required>
+                    <p style="color: red;" id="check"></p>
+                    <button type="submit">Register</button>
+                    <br>
+                    <p>I have an account <a href="login.html">Login</a></p>
+                </form>
+        </div>
+
+    </div>
+    <script>
+        function checkpassword(){
+            let pass = document.getElementById("pass").value;
+            let cpass = document.getElementById("cpass").value;
+
+            if(pass==cpass){
+                let err = document.getElementById("check");
+                err.textContent= "";
+            }else{
+                let err = document.getElementById("check");
+                err.textContent= " Password mismatch !!!!!";
+            }
+        }
+    </script>
+    
+</body>
+</html>
