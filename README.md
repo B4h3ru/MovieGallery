@@ -1,10 +1,19 @@
-+project title : Movie gallery
-+
-+to run this code it needs appache server and ZAMPP to host local
-+
-+it has administration control page 
-+  -login
-+  -add movies
-+  -Update movies :- editing and delete movie
-+  -add admin account
-:
+project title : Movie gallery
+
+to run this code it needs appache server and ZAMPP to host local
+
+it has administration control page 
+  -login
+  -add movies
+  -Update movies :- editing and delete movie
+  -add admin account
+
+and also 
+it has User/ subscriber page 
+  -signup
+  -login
+  -home page for displaying movies
+
+ other 
+   some sample movies is there in admin/uplods folder
+ 
